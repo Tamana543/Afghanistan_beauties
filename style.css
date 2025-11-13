@@ -99,6 +99,36 @@ body {
 .hero .btn-primary:hover {
   background-color: #395a5c;
 }
+/* --- About Section --- */
+.about-section {
+     margin-top: 5%;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.about-section h2 {
+  color: #2d3a3a;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.about-section h3 {
+  color: #395a5c;
+}
+
+.about-section p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.about-section img {
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.about-section img:hover {
+  transform: scale(1.03);
+}
 /* City Cards */
 .city-card img {
   height: 230px;
