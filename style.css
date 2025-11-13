@@ -1,0 +1,78 @@
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2d3a3a !important;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Band-e_Amir_Lakes_in_Bamyan_Province.jpg') center/cover no-repeat;
+}
+
+.hero .btn-primary {
+  background-color: #557b83;
+  border: none;
+}
+
+.hero .btn-primary:hover {
+  background-color: #395a5c;
+}
+
+/* City Cards */
+.city-card img {
+  height: 230px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.city-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Stats */
+.stats {
+  background: linear-gradient(rgba(45, 58, 58, 0.85), rgba(45, 58, 58, 0.85)),
+              url('https://upload.wikimedia.org/wikipedia/commons/0/04/Pamir_Mountains_in_Afghanistan.jpg') center/cover no-repeat;
+}
+
+.stats h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.stats p {
+  color: #ddd;
+}
+
+/* Team */
+.team-card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.team-card img {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #2d3a3a;
+}
