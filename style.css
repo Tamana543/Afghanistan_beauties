@@ -66,21 +66,39 @@ body {
   background-color: #557b83;
   color: #fff;
 }
-/* Hero */
+
+/* --- Hero Section --- */
 .hero {
   height: 100vh;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Band-e_Amir_Lakes_in_Bamyan_Province.jpg') center/cover no-repeat;
+  background: 
+    linear-gradient(rgba(25, 35, 35, 0.7), rgba(25, 35, 35, 0.7)),
+    url("https://trektajikistan.com/wp-content/uploads/2025/08/tsaxinkul-pamir-2.jpg") center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.hero p {
+  color: #e3e3e3;
+  font-size: 1.2rem;
 }
 
 .hero .btn-primary {
   background-color: #557b83;
   border: none;
+  transition: background 0.3s ease-in-out;
 }
 
 .hero .btn-primary:hover {
   background-color: #395a5c;
 }
-
 /* City Cards */
 .city-card img {
   height: 230px;
