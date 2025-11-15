@@ -4,6 +4,9 @@ body {
   background-color: #f8f9fa;
   color: #333;
 }
+section {
+  margin: 5% 0% !important;
+}
 /* --- Navbar Styling --- */
 .navbar {
   background-color: #2d3a3a !important;
