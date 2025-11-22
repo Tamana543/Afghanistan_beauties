@@ -3,3 +3,7 @@
 ##### Where mountains meet beauty, history, and resilience
 
 [live](https://tamana543.github.io/Afghanistan_beauties/)
+
+###
+
+![Project overcview ](Project_overview.png)
