@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us – AfghanCities</title>
+    <link rel="stylesheet" href="shared.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      
+
+        .section-card {
+            border: none;
+            border-radius: 12px;
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Team  */
+
+
+        .team-section {
+            background: #f7f9fb;
+        }
+
+        .team-card {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 30px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .team-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 4px solid #395a5c;
+            box-shadow: 0 0 10px rgba(45, 58, 58, 0.85);
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background-color: #395a5c;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+
+        .carousel-indicators .active {
+            opacity: 1;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(94, 131, 131, 0.85);
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+
+
+        footer {
+            background: #1c1f24;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top w-100 p-3">
+        <div class="d-flex justify-content-between align-items-center w-100 px-3">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold logo" href="index.html">AfghanCities</a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" role="button"
+                            data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html#planning">Travel Planning</a></li>
+                            <li><a class="dropdown-item" href="services.html#booking">Hotel Booking</a></li>
+                            <li><a class="dropdown-item" href="services.html#guides">Local Guides</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center text-center text-white">
+        <div class="hero-overlay"></div>
+        <div class="hero-text-bg">
+            <h1 class="display-4 fw-bold">Who we are </h1>
+            <p class="lead">Want you know about us ?</p>
+            <a href="#about" class="btn btn-primary btn-lg mt-3">See who we are ?</a>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="container py-5">
+
+        <!-- About -->
+        <div class="section-card">
+            <h2 class="fw-bold mb-3">About AfghanCities</h2>
+            <p>
+                AfghanCities is a digital platform designed to showcase the cultural richness, historical depth,
+                and diverse identity of Afghanistan. Our goal is to create a trusted, visually appealing space
+                where students, travelers, researchers, and enthusiasts can explore Afghan cities with accuracy
+                and respect.
+            </p>
+        </div>
+
+        <!-- Mission -->
+        <div class="section-card">
+            <h3 class="fw-semibold mb-3">Our Mission</h3>
+            <p>
+                We aim to provide reliable information that highlights Afghanistan’s heritage, geography,
+                and traditions. The mission behind AfghanCities is to support learning, inspire curiosity,
+                and offer a digital gateway for discovering cities across the country.
+            </p>
+        </div>
+
+        <!-- Vision -->
+        <div class="section-card">
+            <h3 class="fw-semibold mb-3">Our Vision</h3>
+            <p>
+                Our vision is to create a long-term resource for cultural studies, tourism, academic research,
+                and global understanding. AfghanCities strives to become a bridge that connects local stories
+                with global audiences.
+            </p>
+        </div>
+
+        <!-- Offerings -->
+        <div class="section-card">
+            <h3 class="fw-semibold mb-3">What We Offer</h3>
+            <p>
+                We provide curated insights into major Afghan cities such as Kabul, Herat, Kandahar,
+                Bamyan, and Mazar-e-Sharif. Each section includes historical background, cultural traditions,
+                local attractions, and practical visitor information.
+            </p>
+        </div>
+
+        <!-- Team -->
+
+        <section id="team" class="team-section py-5 mt-3 mb-3">
+            <div class="container text-center">
+                <h2 class="section-title mb-5">Meet Our Team</h2>
+
+                <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- Member 1 -->
+                        <div class="carousel-item active">
+                            <div class="team-card">
+                                <img src="teammates/Tamana Farzami .jpg" class="rounded-circle mb-3"
+                                    alt="Tamana Farzami">
+                                <h5>Tamana Farzami</h5>
+                                <p class="text-muted">Frontend Developer & Designer</p>
+                                <p>Passionate about building creative, user-friendly designs that reflect Afghanistan’s
+                                    vibrant culture and strength.</p>
+                            </div>
+                        </div>
+
+                        <!-- Member 2 -->
+                        <div class="carousel-item">
+                            <div class="team-card">
+                                <img src="teammates/Ghulam_abbas .jfif" class="rounded-circle mb-3" alt="Abbas Gowhari">
+                                <h5>Ghulam Abbas Gowhari</h5>
+                                <p class="text-muted">Tour guide, communication department. </p>
+                                <p>Patient in traveling, sightseeing, camping, and talking with new people. </p>
+                            </div>
+                        </div>
+
+                        <!-- Member 3 -->
+                        <div class="carousel-item">
+                            <div class="team-card">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-3"
+                                    alt="Zahra Akbari">
+                                <h5>Zahra Akbari</h5>
+                                <p class="text-muted">Front-End Developer </p>
+                                <p>I'am a front-end developer driven by creativety,designing clean and engaging digital
+                                    experiences </p>
+                            </div>
+                        </div>
+
+                        <!-- Member 4 -->
+                        <div class="carousel-item">
+                            <div class="team-card">
+                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjUseNRhA0TPiHm6QxACz1FAnLFv9FO2_WYEWBGNQgFpwFWNE2E=s300-p-k-rw-no"
+                                    class="rounded-circle mb-3" alt="Marila Noori">
+                                <h5>Marila Noori</h5>
+                                <p class="text-muted">Cultural Content Creator & Persian Language Specialist
+                                </p>
+                                <p>Passionate about sharing Afghanistan’s stories through language, culture, and
+                                    authentic local insight. Marila brings her experience as a Persian teacher to craft
+                                    meaningful, accessible content that connects travelers to the heart of Afghanistan.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Member 5 -->
+                        <div class="carousel-item">
+                            <div class="team-card">
+                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXAX4oupxVgzA80XcedxqUTmsLMH1ZrSAaff8fru_jflQcUo4wW=s300-p-k-rw-no"
+                                    class="rounded-circle mb-3" alt="Jalil Afghan">
+                                <h5>Jalil Afghan</h5>
+                                <p class="text-muted">Lawyer & Human Rights Advocate</p>
+                                <p>Dedicated to justice and driven by compassion, Jalil works to protect the rights of
+                                    women and uplift the voices that often go unheard. Through law, advocacy, and
+                                    community action, he helps shape a more equal and empowered future. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <!-- Carousel indicators (dots) -->
+                    <div class="carousel-indicators mt-4">
+                        <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="4"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-4 text-center">
+        <p class="mb-1">&copy; 2025 Afghan Cities. Final Project Featured by</p>
+
+        <a href="https://github.com/Tamana543" class="text-info">Tamana Farzami</a> |
+        <a href="mailto:abbas.gowhari@auaf.edu.af" class="text-info">Abbas Gowhari</a> |
+        <a href="mailto:zahra.akbari@auaf.edu.af" class="text-info">Zahra Akbari</a> |
+        <a href="mailto:jalil.afghan@auaf.edu.af" class="text-info">Jalil Afghan</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
