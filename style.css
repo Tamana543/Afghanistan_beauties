@@ -8,7 +8,7 @@ section {
   margin: 5% 0% !important;
 }
 /* --- Navbar Styling --- */
-.navbar {
+/* .navbar {
   background-color: #2d3a3a !important;
   transition: background 0.3s ease-in-out;
   padding: 0.8rem 0;
@@ -40,7 +40,7 @@ section {
 
 .navbar .nav-link:hover {
   color: #c1d3d3 !important;
-}
+} */
 
 /* Nested Dropdown Fix */
 .dropdown-submenu > .dropdown-menu {
