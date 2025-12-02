@@ -3,6 +3,34 @@ html, body {
     padding: 0;
     scroll-behavior: smooth;
 }
+/* Nested Dropdown Fix */
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  margin-left: 0.1rem;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  background-color: #344646;
+  border: none;
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  color: #f1f1f1;
+  transition: background 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #557b83;
+  color: #fff;
+}
+
 
 /* Navbar */
 .navbar.fixed-top {
@@ -107,3 +135,32 @@ footer {
     font-size: 2.5rem;
     color: #000;
   }
+/* Section title underline animation */
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+  /* text-align: center; */
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: #395a5c;
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+  width: 100%;
+}
+
+.section-title:hover {
+  color: #395a5c;
+}
