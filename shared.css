@@ -103,3 +103,7 @@ body.scrolled .navbar.fixed-top {
 footer {
   background-color: #2d3a3a;
 }
+.stats h2 {
+    font-size: 2.5rem;
+    color: #000;
+  }

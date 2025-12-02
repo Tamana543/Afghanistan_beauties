@@ -1,0 +1,168 @@
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+section {
+  margin: 5% 0% !important;
+}
+
+/* Nested Dropdown Fix */
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  margin-left: 0.1rem;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  background-color: #344646;
+  border: none;
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  color: #f1f1f1;
+  transition: background 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #557b83;
+  color: #fff;
+}
+
+
+/* --- About Section --- */
+.about-section {
+     margin-top: 5%;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.about-section h2 {
+  color: #2d3a3a;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.about-section h3 {
+  color: #395a5c;
+}
+
+.about-section p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.about-section img {
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.about-section img:hover {
+  transform: scale(1.03);
+}
+/* Featured Cities Section */
+.city-card {
+  height: 450px; /* Increased height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.city-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Section title underline animation */
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+  /* text-align: center; */
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: #395a5c;
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+  width: 100%;
+}
+
+.section-title:hover {
+  color: #395a5c;
+}
+
+
+
+.team-section {
+  background: #f7f9fb;
+}
+
+.team-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid #395a5c;
+  box-shadow: 0 0 10px rgba(45, 58, 58, 0.85);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #395a5c;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(94, 131, 131, 0.85);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #2d3a3a;
+}
